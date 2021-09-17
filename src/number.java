@@ -17,7 +17,7 @@ public class number {
             }
         }
     }
-    static String check13ToDown(int n){
+    public static String check13ToDown(int n){
         switch(n){
             case 1:
                 return "one";
@@ -46,7 +46,8 @@ public class number {
                 return "twelve";
         }
         return "";
-    }static String check20ToDown(int n){
+    }
+    public static String check20ToDown(int n){
         switch(n){
             case 2:
                 return "twen";
@@ -68,7 +69,7 @@ public class number {
         }
         return null;
     }
-    static String check100ToDown(int n){
+    public  static String check100ToDown(int n){
         int a = (n -n%10)/10;
         int b = n%10;
         if (b==0){
@@ -81,7 +82,7 @@ public class number {
         }
 
     }
-    static String check999ToDown(int n){
+    public static String check999ToDown(int n){
         int a = (n -n%100)/100;
         int b = n%100;
         if (b<13){
